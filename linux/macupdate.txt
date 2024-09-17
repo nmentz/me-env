@@ -1,0 +1,10 @@
+turn off interface so you can modify it
+sudo ip link set dev interface_name down
+
+then run
+sudo ip link set dev interface_name address ff:ff:ff:ff:ff:ff (all f's is not a unique identifier, don't use it).
+stuff is sent to all f's when all l2 network devices are intended to recieve something like an arp request.
+
+funny mac names you can use instead
+b0:bb:1e:fa:ce:dd
+de:fe:c8:fa:ca:de
